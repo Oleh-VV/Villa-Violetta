@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium room Villa Violetta</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="styles_roomLMS.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans+Narrow&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <nav>
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a href="../index.html"><p>Villa Violetta</p></a>
+        </div>
+        <div class="nav-contacts">
+          <div class="nav-fhone">
+            <a href="tel:+38091-789-78-78">+38091-789-78-78</a>
+          </div>
+          <div class="nav-mail">
+            <a href="mailto:wellson@ukr.net">well_son@ukr.net</a>
+          </div>
+        </div>
+        <div class="accaunt-block">
+          <div class="accaunt-registr">
+            <button type="button" class="btn registr-btn">Registr</button>
+          </div>
+          <div class="accaunt-sign">
+            <button type="button" class="btn login-btn">Login</button>
+          </div>
+        </div>
+        <div class="lang">
+          <a href="">
+            <svg
+              width="35px"
+              xmlns="http://www.w3.org/2000/svg"
+              id="flag-icons-ua"
+              viewBox="0 0 640 480"
+            >
+              <g fill-rule="evenodd" stroke-width="1pt">
+                <path fill="gold" d="M0 0h640v480H0z" />
+                <path fill="#0057b8" d="M0 0h640v240H0z" />
+              </g></svg
+          ></a>
+
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="flag-icons-gb"
+              viewBox="0 0 640 480"
+              width="35px"
+            >
+              <path fill="#012169" d="M0 0h640v480H0z" />
+              <path
+                fill="#FFF"
+                d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"
+              />
+              <path
+                fill="#C8102E"
+                d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"
+              />
+              <path
+                fill="#FFF"
+                d="M241 0v480h160V0H241zM0 160v160h640V160H0z"
+              />
+              <path
+                fill="#C8102E"
+                d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="nav-links">
+        <ul class="menu-list">
+          <i class="fa fa-times"></i>
+          <a href="../index.html"
+            ><li>
+              <div class="linkborder-left"></div>
+              HOME
+
+              <div class="linkborder-right"></div></li
+          ></a>
+          <a href="rooms.html"
+            ><li>
+              <div class="linkborder-left"></div>
+              ROOMS
+
+              <div class="linkborder-right"></div></li
+          ></a>
+          <a href="price.html"
+            ><li>
+              <div class="linkborder-left"></div>
+              PRICE
+
+              <div class="linkborder-right"></div></li
+          ></a>
+          <a href="about.html"
+            ><li>
+              <div class="linkborder-left"></div>
+              ABOUT US
+
+              <div class="linkborder-right"></div></li
+          ></a>
+          <a href="location.html"
+            ><li>
+              <div class="linkborder-left"></div>
+              LOCATION
+
+              <div class="linkborder-right"></div></li
+          ></a>
+        </ul>
+      </div>
+      <i class="fa fa-bars"></i>
+    </nav>
+    <!--modal blocks-->
+    <!--modal block registr-->
+    <div class="modal-wrapper hidden modal-wrapper-registr">
+      <div class="modal-block">
+        <button type="button" class="close-icon">
+          <i class="fa fa-times"></i>
+        </button>
+        <h2>REGISTRATION</h2>
+        <form class="registr-form" action="">
+          <label for="username">Username</label>
+          <input
+            name="username"
+            type="text"
+            class="username-input"
+            placeholder="Enter your username"
+            required
+          />
+          <label for="mail">Email adress</label>
+          <input
+            name="mail"
+            type="email"
+            class="mail-input"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            name="password"
+            type="password"
+            class="password"
+            placeholder="Enter your password"
+            required
+          />
+          <input class="btn" type="submit" value="REGISTR" />
+          <p>Already have an accaunt?</p>
+          <button type="button" class="btn login-btn">LOGIN</button>
+        </form>
+      </div>
+    </div>
+    <!--modal block login-->
+    <div class="modal-wrapper hidden modal-wrapper-login">
+      <div class="modal-block">
+        <button type="button" class="close-icon">
+          <i class="fa fa-times"></i>
+        </button>
+        <h2>LOGIN</h2>
+        <form class="login-form" action="">
+          <label for="mail">Email adress</label>
+          <input
+            name="mail"
+            type="email"
+            class="mail-input"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            name="password"
+            type="password"
+            class="password"
+            placeholder="Enter your password"
+            required
+          />
+          <a href="">I fotgot password</a>
+          <input class="btn" type="submit" value="LOGIN" />
+          <p>Don`t have an accaunt yet?</p>
+          <button type="button" class="btn registr-btn">Registr now</button>
+        </form>
+      </div>
+    </div>
+    <!--modal block comment-->
+    <div class="modal-wrapper hidden modal-wrapper-comment">
+      <div class="modal-block">
+        <button type="button" class="close-icon">
+          <i class="fa fa-times"></i>
+        </button>
+        <button type="button" class="btn">LOGIN</button>
+        <h2>Write your comment</h2>
+        <form class="comment-form" action="">
+          <div class="textarea">
+            <textarea name="message" rows="10" cols="30" required></textarea>
+          </div>
+
+          <fieldset>
+            <legend>Rating</legend>
+            <div>
+              <label for="rating10">10</label>
+              <input
+                name="rating"
+                value="10"
+                type="radio"
+                id="rating10"
+                checked
+              />
+            </div>
+            <div>
+              <label for="rating9">9</label>
+              <input name="rating" value="9" type="radio" id="rating9" />
+            </div>
+            <div>
+              <label for="rating8">8</label>
+              <input name="rating" value="8" type="radio" id="rating8" />
+            </div>
+            <div>
+              <label for="rating7">7</label>
+              <input name="rating" value="7" type="radio" id="rating7" />
+            </div>
+            <div>
+              <label for="rating6">6</label>
+              <input name="rating" value="6" type="radio" id="rating9" />
+            </div>
+            <div>
+              <label for="rating5">5</label>
+              <input name="rating" value="5" type="radio" id="rating5" />
+            </div>
+            <div>
+              <label for="rating4">4</label>
+              <input name="rating" value="4" type="radio" id="rating4" />
+            </div>
+            <div>
+              <label for="rating3">3</label>
+              <input name="rating" value="3" type="radio" id="rating3" />
+            </div>
+            <div>
+              <label for="rating2">2</label>
+              <input name="rating" value="2" type="radio" id="rating2" />
+            </div>
+            <div>
+              <label for="rating1">1</label>
+              <input name="rating" value="1" type="radio" id="rating1" />
+            </div>
+          </fieldset>
+
+          <input class="btn send-comment-btn" type="submit" value="SEND" />
+        </form>
+      </div>
+    </div>
+    <div class="modal-wrapper hidden modal-wrapper-comment-thanks">
+      <div class="modal-block">
+        <button type="button" class="close-icon">
+          <i class="fa fa-times"></i>
+        </button>
+        <p>Thank you for your comment!</p>
+      </div>
+    </div>
+    <!--main block-->
+    <main>
+      <div class="left-block">
+        <!--search-room - form-->
+        <form action="#" class="search-room">
+          <p>Book room</p>
+          <div class="search-room-infoblock">
+            <label for="check-in-date">Check-in date</label>
+            <input type="date" name="check-in-date" id="checkInDate" required />
+          </div>
+          <div class="search-room-infoblock">
+            <label for="check-out-date">Check-out date</label>
+            <input
+              type="date"
+              name="check-out-date"
+              id="checkOutDate"
+              required
+            />
+          </div>
+
+          <input
+            type="submit"
+            id="submitSearchBtn"
+            placeholder="Search"
+            class="btn"
+          />
+        </form>
+        <div class="other-rooms">
+          <p>You can also explore other our rooms:</p>
+          <ul>
+            <li>
+              <a href="room_LS.html">Large room seesight</a>
+            </li>
+            <li>
+              <a href="room_L.html">Large room</a>
+            </li>
+            <li>
+              <a href="room_MS.html">Medium room seesight</a>
+            </li>
+            <li class="active-link">
+              <a href="room_M.html">Medium room</a>
+            </li>
+            <li>
+              <a href="room_SS.html">Small room seesight</a>
+            </li>
+            <li>
+              <a href="room_S.html">Small room</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!----- room - block ---->
+      <div class="room-block">
+        <h1>Medium room</h1>
+        <div class="room-img-descr">
+          <div class="room-images">
+            <div class="room-main-img">
+              <img src="../images/roomM1.jpg" alt="Large room seesight foto" />
+            </div>
+            <div class="room-addition-img-block">
+              <img
+                src="../images/roomM2.jpg"
+                alt="Large room seesight foto"
+                class="room-addition-img"
+              />
+              <img
+                src="../images/roomM3.jpg"
+                alt="Large room seesight foto"
+                class="room-addition-img"
+              />
+              <img
+                src="../images/roomM1.jpg"
+                alt="Large room seesight foto"
+                class="room-addition-img"
+              />
+            </div>
+          </div>
+
+          <p class="card-descr">
+            The light and airy spaces have a fresh contemporary feel. The white
+            walls, hardwood floors, the ocean-hue accents and distinctive
+            Portuguese tile mosaics, transport you to our region. The light and
+            airy spaces have a fresh contemporary feel. The white walls,
+            hardwood floors, the ocean-hue accents and distinctive Portuguese
+            tile mosaics, transport you to our region. The light and airy spaces
+            have a fresh contemporary feel. The white walls, hardwood floors,
+            the ocean-hue accents and distinctive Portuguese tile mosaics,
+            transport you to our region. The light and airy spaces have a fresh
+            contemporary feel. The white walls, hardwood floors, the ocean-hue
+            accents and distinctive Portuguese tile mosaics, transport you to
+            our region. The light and airy spaces have a fresh contemporary
+            feel. The white walls, hardwood floors, the ocean-hue accents and
+            distinctive Portuguese tile mosaics, transport you to our region.
+          </p>
+          <div class="div-line"></div>
+          <div class="card-addinfo">
+            <div class="card-top-addinfo">
+              <div class="card-guests">
+                <div class="card-bed">
+                  <div>Bed</div>
+                  <div class="svg-info-block">
+                    <svg
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 481.827 481.827"
+                      style="enable-background: new 0 0 481.827 481.827"
+                      xml:space="preserve"
+                      fill="currentColor"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M471.827,153.109c-5.523,0-10,4.478-10,10v44.618c-0.208-0.01-0.413-0.031-0.623-0.031H20.371
+		c-0.125,0-0.247,0.016-0.371,0.02V87.064c0-5.522-4.477-10-10-10c-5.523,0-10,4.478-10,10v307.699c0,5.522,4.477,10,10,10
+		c5.523,0,10-4.478,10-10v-72.355c0.124,0.004,0.246,0.02,0.371,0.02h440.833c0.21,0,0.415-0.021,0.623-0.031v72.366
+		c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V163.109C481.827,157.586,477.35,153.109,471.827,153.109z M444.701,292.59H36.874
+		c-5.523,0-10-4.478-10-10s4.477-10,10-10h407.827c5.523,0,10,4.478,10,10S450.224,292.59,444.701,292.59z"
+                      />
+                      <path
+                        d="M165.125,180.988c0-15.464-12.536-28-28-28h-78c-15.464,0-28,12.536-28,28v15h134V180.988z"
+                      />
+                    </svg>
+
+                    <div class="card-bed-amount"><p>2</p></div>
+                  </div>
+                </div>
+                <div class="card-person">
+                  <div>Person</div>
+                  <div class="svg-info-block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-person"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                      />
+                    </svg>
+                    <div class="card-person-amount"><p>4</p></div>
+                  </div>
+                </div>
+                <div class="card-kitchen">
+                  <div>Kitchen</div>
+                  <div class="svg-info-block">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M341.18,105.613C341.18,47.284,307.275,0,265.453,0s-75.727,47.284-75.727,105.613c0,44.467,19.714,82.488,47.609,98.061
+			L233.091,512h64.724l-4.244-308.325C321.465,188.102,341.18,150.081,341.18,105.613z"
+                      />
+                      <path
+                        d="M123.285,28.141v149.557h-0.001c0,6.866-4.512,13.005-10.926,15.139H64.141c-6.413-2.134-10.926-8.272-10.926-15.139
+			V28.141H19.824v149.557c0,23.209,15.8,42.995,38.421,48.117l1.577,0.357L55.889,512h64.723l-3.935-285.826l1.577-0.357
+			c22.621-5.122,38.421-24.909,38.421-48.117V28.141H123.285z"
+                      />
+                      <rect
+                        x="71.558"
+                        y="28.141"
+                        width="33.391"
+                        height="141.056"
+                      />
+                      <path
+                        d="M492.176,512l-5.368-499.666c0,0-88.024-12.334-88.024,251.699l31.719,26.404L427.453,512H492.176z"
+                      />
+                    </svg>
+                    <div class="card-kitchen-amount"><p>+</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-price">
+                <p>
+                  Price <br />
+                  from <span>70 USD</span>
+                </p>
+                <a href="price.html">Price</a>
+              </div>
+            </div>
+            <div class="div-line"></div>
+            <form action="#" class="search-room">
+              <p>Book room</p>
+              <div class="search-room-infoblock">
+                <label for="check-in-date">Check-in date</label>
+                <input
+                  type="date"
+                  name="check-in-date"
+                  id="checkInDate"
+                  required
+                />
+              </div>
+              <div class="search-room-infoblock">
+                <label for="check-out-date">Check-out date</label>
+                <input
+                  type="date"
+                  name="check-out-date"
+                  id="checkOutDate"
+                  required
+                />
+              </div>
+
+              <input
+                type="submit"
+                id="submitSearchBtn"
+                placeholder="Search"
+                class="btn"
+              />
+            </form>
+            <div class="div-line"></div>
+            <div class="card-bottom-addinfo">
+              <div class="card-bottom-item">
+                <p>View on the street</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Parking</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Vacuum cleaner</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Parquet flooring</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Kettle</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Shower</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Security system</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Smoke detector</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>TV</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Towel Dryer</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Wardrobe</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Bath Tub</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Double bed</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Fridge</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Chairs</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Coffee machine</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Table</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Dish Washer</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Micro wave oven</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-bottom-item">
+                <p>Oven</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  viewBox="0 0 512 512"
+                  width="25px"
+                >
+                  <path
+                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                    fill="#2196f3"
+                    style="fill: #1ed366"
+                  ></path>
+                  <path
+                    d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
+                    fill="#fafafa"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="comment-btn btn">Live comment</button>
+        <div class="comments-wrapper">
+          <div class="comment-block">
+            <div class="top-comment-block">
+              <h5>Mike Own</h5>
+              <div class="rating">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-half"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p>
+              Very comfortable appartment. We got a great pleasure of beeng here
+              and look forward for visit Villa Violetta again and again.
+            </p>
+          </div>
+          <div class="comment-block">
+            <div class="top-comment-block">
+              <h5>Jane Harrison</h5>
+              <div class="rating">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star-half"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"
+                  /></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p>
+              Very comfortable appartment. We got a great pleasure of beeng here
+              and look forward for visit Villa Violetta again and again.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!---------Footer--------->
+    <footer>
+      <div class="footer-contacts">
+        <div class="nav-fhone">
+          <a href="tel:+38091-789-78-78">+38091-789-78-78</a>
+        </div>
+        <div class="nav-mail">
+          <a href="mailto:wellson@ukr.net">well_son@ukr.net</a>
+        </div>
+      </div>
+      <div class="footer-adress">
+        <p>
+          Ukraine <br />
+          Kyiv <br />
+          Dobrohotova str. 24
+        </p>
+      </div>
+      <div class="footer-icons">
+        <div>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              /></svg
+          ></a>
+        </div>
+        <div>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-twitter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              /></svg
+          ></a>
+        </div>
+        <div>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+      <div class="footer-rights">
+        <p>
+          Powered by <a href=""><span>VOV</span></a>
+        </p>
+      </div>
+    </footer>
+    <script src="script_roomLMS.js"></script>
+  </body>
+</html>
+<!--phone number and mail-->
+<!--social media icons-->
+<!--language-->
+<!--footer media-->
+<!--при нажатии на модальное окно курсор на иконке закрытия-->
+<!--плавное открытие модального окна-->
+<!--текст для что входит в цену, настроить по ширине текст-->
+<!--почему пропадает автоматически спасибо за комментарий?-->
