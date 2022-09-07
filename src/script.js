@@ -24,11 +24,11 @@ let roomSlides = document.body.querySelectorAll(".room-card");
 
 window.addEventListener("scroll", function () {
   roomSlides.forEach((slide) => {
-    if (slide.getBoundingClientRect().top < window.innerHeight + 50) {
+    if (slide.getBoundingClientRect().top < window.innerHeight + 30) {
       slide.style.marginTop = "20px";
     }
     if (slide.getBoundingClientRect().top > window.innerHeight) {
-      slide.style.marginTop = "220px";
+      slide.style.marginTop = "100px";
     }
   });
 });

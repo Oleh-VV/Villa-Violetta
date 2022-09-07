@@ -785,6 +785,9 @@ footer {
   .card-descr {
     font-size: 1rem;
   }
+  .card-descr-forlarge {
+    display: none;
+  }
 }
 @media (max-width: 470px) {
   .room-block h1 {
